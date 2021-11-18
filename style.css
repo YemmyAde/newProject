@@ -390,6 +390,7 @@ p {
 }
 .footerSect {
   text-align: left;
+  width: 100%;
 }
 .footerSectionItem {
   display: inline-block;
@@ -590,5 +591,10 @@ p {
 @media only screen and (max-width: 768px) {
   .block {
     font-size: 18px;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .footerSection {
+    display: block;
   }
 }
