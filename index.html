@@ -11,26 +11,52 @@
         href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700&family=Inter:wght@400;500&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/a1c3fa2e9a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#icon").click(function(){ 
+    $("#menu").show();
+    $("#cancel").toggle();
+    $(this).hide();
+  });
+});
+$(document).ready(function(){
+  $("#cancel").click(function(){
+    $("#menu").hide();
+    $("#icon").toggle();
+    $(this).hide();
+  });
+});
+</script>
+    <title>Brace</title>
 </head>
 
 <body>
-    <!-- <header class="menu">
-        <nav>
-            <ul>
-                <li><a href="#">Nav1</a></li>
-                <li><a href="#">Nav2</a></li>
-                <li><a href="#">Nav3</a></li>
-            </ul>
-            <img src="assets/images/logo.png" alt="Logo" class="logo">
-            <ul>
-                <li><a href="#">Nav4</a></li>
-                <li><a href="#">Nav5</a></li>
-                <li><a href="#">Nav6</a></li>
+    <header>
+        <nav class="navContainer" id="menu">
+            <ul class=flexNav>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Screencasts</a></li>
+                <li><a href="#">Case Studies</a></li>
+                <div class='flex flex4'>
+                <li><img src="assets/images/logo.png" alt="Logo" class="logo"></li>
+                </div>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">About</a></li>
+                <li class="flex7"><a href="#">Get Started</a></li>
             </ul>
         </nav>
-    </header> -->
+        <div class="navContainer2" >
+            <ul class=flexNav2>
+                
+                <li><img src="assets/images/logo.png" alt="Logo" class="logo"></li>
+                <i class="fas fa-bars" id="icon"></i>
+                <i class="fas fa-times" id="cancel"></i>
+            </ul>
+        </div>
+    </header>
     <div class='section1'>
         <h1 class="div1" data-aos="zoom-in-left" data-aos-delay="100"> Lorem ipsum </h1>
         <p class="text1" data-aos="zoom-out-left" data-aos-delay="500">Earum suscipit aliquid sed at nihil, voluptas nemo, ratione odit perspiciatis quae molestiae.
