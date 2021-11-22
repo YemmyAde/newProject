@@ -9,6 +9,7 @@
   --lightGrey: #666060;
   --lightGreen: #1bc47d;
   --lightBlue: #eaf2fd;
+  --lightShadeGray: #f6f6f6;
 }
 html,
 body {
@@ -47,6 +48,13 @@ position: relative;
 }
 .fa-times{
   display: none;
+}
+.fa-arrow-up, .fa-arrow-down{
+  size: 20px;
+  background-color: var(--lightShadeGray);
+  padding: 10px;
+  margin-right: 20px;
+  border-radius: 10px;
 }
 .menu {
   background-color: var(--white);
@@ -126,6 +134,30 @@ p {
   color: var(--lightGrey);
   line-height: 35px;
   font-size: 20px;
+}
+.inner, .inner2{
+  background-color: var(--lightShadeGray);
+  border-radius: 10px;
+  margin: 30px;
+  padding: 10px;
+}
+.inner2{
+  background-color: white !important;
+}
+.inner > p, .innerDiv > p {
+  color: #000 !important;
+  text-align: left;
+  font-size: 1.0em;
+}
+.innerDiv{
+  display: block;
+  margin-bottom: 30px;
+}
+.innerBold{
+  font-weight: bold;
+}
+.marginBottom{
+  margin-bottom: 20px !important;
 }
 .text4 {
   padding: 10px 5% 0 0 !important;
@@ -595,6 +627,6 @@ p {
 }
 @media only screen and (max-width: 580px) {
   .footerSection {
-    display: block;
+    display: blockleft;
   }
 }
